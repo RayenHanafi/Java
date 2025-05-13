@@ -177,9 +177,9 @@ public class RobotAnimated extends JFrame {
             super.paintComponent(g);
             setBackground(Color.white);
 
-            g.setColor(Color.BLUE);
-            int size = 20;
-            g.fillOval(robot.getX() * 5, robot.getY() * 5, size, size);
+            g.setColor(Color.GREEN);
+            int size = 25;
+            g.fill3DRect(robot.getX() * 5, robot.getY() * 5, size, size,true);
 
             g.setColor(Color.BLACK);
             g.drawString("Robot: " + robot.getId(), robot.getX() * 5, robot.getY() * 5 - 5);

@@ -3,7 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PanneauSolaire {
-    private static final int CHARGE_AMOUNT = 5;
+    private static final int CHARGE_AMOUNT = 1;
     private static final int CHARGE_INTERVAL = 300000; // 5 minutes in milliseconds
 
     private final Robot robot;
@@ -21,7 +21,7 @@ public class PanneauSolaire {
             public void actionPerformed(ActionEvent e) {
                 if(exposeLumiere) {
                     robot.recharger(CHARGE_AMOUNT);
-                    robot.ajouterHistorique("Chargement solaire (+5%)");
+                    robot.ajouterHistorique("Chargement solaire (+1%)");
                 }
             }
         });
